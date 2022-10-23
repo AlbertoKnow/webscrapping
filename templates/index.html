@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" />
+</head>
+
+<body>
+    <div class="botones">
+        <a href="/mundo" class="btn btn-dark">Titulares a nivel mundial</a>
+        <a href="/elecciones2022" class="btn btn-dark">Elecciones 2022</a>
+        <a href="/politica" class="btn btn-dark">Politica</a>
+        <a href="/economia" class="btn btn-dark">Economia</a>
+        <a href="/lima" class="btn btn-dark">Lima</a>
+        <a href="/deportes" class="btn btn-dark">Deportes</a>
+        <a href="/tecnologia" class="btn btn-dark">Tecnologia</a>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+    <style>
+        body{
+            background-color: rgb(187, 187, 187);
+        }
+
+        body {
+            margin: 3%;
+        }
+        .botones{
+            padding-bottom: 15px;
+        }
+
+        .card {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .card:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</body>
+
+</html> 
